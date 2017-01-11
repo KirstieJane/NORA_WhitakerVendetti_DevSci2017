@@ -11,4 +11,4 @@ Please [open an issue](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevS
 
 ***Figure 5: Whole-brain analysis showing regions that demonstrate an increase in activation with accuracy on analogy trials across all participants after correcting for the effects of age.***
 
-![](https://raw.githubusercontent.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/master/FIGURES/Figure5.png)
+![](https://raw.githubusercontent.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/master/FIGURES/Figure5_lowres.png)
