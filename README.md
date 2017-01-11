@@ -7,4 +7,6 @@ Check out the [jupyter notebook](https://github.com/KirstieJane/NORA_WhitakerVen
 
 Please [open an issue](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/issues) if you have any questions.
 
+---
+
 ![](https://raw.githubusercontent.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/master/FIGURES/Figure5.png)
