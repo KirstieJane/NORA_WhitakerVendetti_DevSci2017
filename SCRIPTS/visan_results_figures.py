@@ -634,6 +634,8 @@ def make_figure1(analogy_stimulus_file, semantic_stimulus_file, color_dict):
     plt.subplots_adjust(left=0, bottom=0, right=1, top=1,
                         wspace=0, hspace=0)
 
+    # Save the figure
+    fig.savefig('../FIGURES/Figure1_lowres.png', dpi=150, bbox_inches=0)
     fig.savefig('../FIGURES/Figure1.png', dpi=600, bbox_inches=0)
     fig.savefig('../FIGURES/Figure1.pdf', dpi=600, bbox_inches=0)
 
@@ -723,6 +725,7 @@ def make_figure2(f_behav):
     plt.tight_layout()
 
     # Save the figure
+    fig.savefig('../FIGURES/Figure2_lowres.png', dpi=150, bbox_inches=0)
     fig.savefig('../FIGURES/Figure2.png', dpi=600, bbox_inches=0)
     fig.savefig('../FIGURES/Figure2.pdf', dpi=600, bbox_inches=0)
 
@@ -798,6 +801,8 @@ def make_figure3(mean_results_surface_file, venn_file):
     plt.subplots_adjust(left=0, bottom=0, right=1, top=1,
                         wspace=0, hspace=0)
 
+    # Save the figure
+    fig.savefig('../FIGURES/Figure3_lowres.png', dpi=150, bbox_inches=0)
     fig.savefig('../FIGURES/Figure3.png', dpi=600, bbox_inches=0)
     fig.savefig('../FIGURES/Figure3.pdf', dpi=600, bbox_inches=0)
 
@@ -835,6 +840,8 @@ def make_figure4(corrage_results_surface_file, venn_file, f_behav, f_mri_cope1, 
     plt.subplots_adjust(left=0, bottom=0, right=1, top=1,
                         wspace=0, hspace=0)
 
+    # Save the figure
+    fig.savefig('../FIGURES/Figure4_lowres.png', dpi=150, bbox_inches=0)
     fig.savefig('../FIGURES/Figure4.png', dpi=600, bbox_inches=0)
     fig.savefig('../FIGURES/Figure4.pdf', dpi=600, bbox_inches=0)
 
@@ -875,6 +882,7 @@ def make_figure5(corracc_results_surface_file, f_behav, f_mri_cope1, f_mri_cope2
     ax_brain, ax_list = add_panel_labels_fig5(ax_brain, ax_list)
 
     # Save the figure
+    fig.savefig('../FIGURES/Figure5_lowres.png', dpi=150, bbox_inches=0)
     fig.savefig('../FIGURES/Figure5.png', dpi=600, bbox_inches=0)
     fig.savefig('../FIGURES/Figure5.pdf', dpi=600, bbox_inches=0)
 
