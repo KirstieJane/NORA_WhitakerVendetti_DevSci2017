@@ -635,6 +635,9 @@ def make_figure1(analogy_stimulus_file, semantic_stimulus_file, color_dict):
                         wspace=0, hspace=0)
 
     fig.savefig('../FIGURES/Figure1.png', dpi=600, bbox_inches=0)
+    fig.savefig('../FIGURES/Figure1.pdf', dpi=600, bbox_inches=0)
+
+    plt.show()
 
 #-------------------------------------------------------------------------------
 # Figure 2
@@ -721,6 +724,7 @@ def make_figure2(f_behav):
 
     # Save the figure
     fig.savefig('../FIGURES/Figure2.png', dpi=600, bbox_inches=0)
+    fig.savefig('../FIGURES/Figure2.pdf', dpi=600, bbox_inches=0)
 
     plt.show()
 
@@ -795,7 +799,9 @@ def make_figure3(mean_results_surface_file, venn_file):
                         wspace=0, hspace=0)
 
     fig.savefig('../FIGURES/Figure3.png', dpi=600, bbox_inches=0)
+    fig.savefig('../FIGURES/Figure3.pdf', dpi=600, bbox_inches=0)
 
+    plt.show()
 
 #-------------------------------------------------------------------------------
 # Figure 4
@@ -830,7 +836,9 @@ def make_figure4(corrage_results_surface_file, venn_file, f_behav, f_mri_cope1, 
                         wspace=0, hspace=0)
 
     fig.savefig('../FIGURES/Figure4.png', dpi=600, bbox_inches=0)
+    fig.savefig('../FIGURES/Figure4.pdf', dpi=600, bbox_inches=0)
 
+    plt.show()
 
 #-------------------------------------------------------------------------------
 # Figure 5
@@ -868,3 +876,6 @@ def make_figure5(corracc_results_surface_file, f_behav, f_mri_cope1, f_mri_cope2
 
     # Save the figure
     fig.savefig('../FIGURES/Figure5.png', dpi=600, bbox_inches=0)
+    fig.savefig('../FIGURES/Figure5.pdf', dpi=600, bbox_inches=0)
+
+    plt.show()
