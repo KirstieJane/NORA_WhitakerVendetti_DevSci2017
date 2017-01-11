@@ -206,7 +206,7 @@ def report_behav_age_correlations(y_name, df):
         mod = ols(formula=formula, data=df)
         res_corr = mod.fit()
 
-    print ('====== {} correlations ======='.format(y_name))
+    print ('=== {} ==='.format(y_name))
     print ('Linear w age')
     print ('  Beta(Age) = {:2.4f}, P = {:2.4f}'.format(res_lin.params['Age_scan'], res_lin.pvalues['Age_scan']))
     print ('  Rsq = {:2.3f}, Rsq_adj = {:2.3f}'.format(res_lin.rsquared, res_lin.rsquared_adj))
@@ -645,10 +645,6 @@ def make_figure2(f_behav):
 
     df.loc[:, 'Age_scan_sq'] = df.loc[:,'Age_scan']**2
 
-    # Print out the stats for how the different behavioural
-    # measures relate to each other
-    report_behav_stats(df)
-
     # Define the color list
     color_list = palettable.colorbrewer.get_map('Set1', 'qualitative', 5).mpl_colors
 
@@ -701,8 +697,6 @@ def make_figure2(f_behav):
             colors_list += [colors_dict[y_name]]
             labels_list += [y_measures_label_dict[y_name]]
 
-            report_behav_age_correlations(y_name, df)
-
         ax.locator_params(nbins=6, axis='y')
         ax.set_xticks([6, 10, 14, 18])
 
@@ -733,7 +727,10 @@ def make_figure2(f_behav):
 #-------------------------------------------------------------------------------
 # Report the descriptive behavoural stats
 #-------------------------------------------------------------------------------
-def report_behav_stats(df):
+def report_behav_stats(f_behav):
+
+    df = pd.read_csv(f_behav)
+    df.loc[:, 'Age_scan_sq'] = df.loc[:,'Age_scan']**2
 
     print('===== Behavioural Statistics ======')
     for measure in ['R1_percent_acc', 'R2_percent_acc',
@@ -759,6 +756,15 @@ def report_behav_stats(df):
         if 'dis' in measure:
             t, p = ttest_rel(df['R2_percent_per'], df['R2_percent_dis'])
             print('   per vs dis (paired): t({:2.0f}) = {:2.3f}, p = {:2.3f}'.format(df['R2_percent_per'].count()-1, t, p))
+
+    print('\n===== Correlations with age =====')
+    measures_list = ['R1_percent_acc', 'R2_percent_acc',
+                     'R1_meanRTcorr_cor', 'R2_meanRTcorr_cor',
+                     'R2_percent_dis', 'R2_percent_per', 'R2_percent_sem']
+
+    for measure in measures_list:
+        report_behav_age_correlations(measure, df)
+
 
 #-------------------------------------------------------------------------------
 # Figure 3
