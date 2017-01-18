@@ -5,6 +5,7 @@ dependencies:
   - numpy
   - matplotlib
   - pandas
-  - palettable
   - sys
   - warnings
+  - pip:
+    - palettable
