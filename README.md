@@ -3,6 +3,8 @@ Code to reproduce the [figures](https://github.com/KirstieJane/NORA_WhitakerVend
 
 Check out the [jupyter notebook](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/blob/master/JUPYTER_NOTEBOOKS/VISAN_Figures.ipynb) or the [NeuroVault collection](http://neurovault.org/collections/1658/) of statistical maps to check our working :wink:! 
 
+You can interact with the code using this [myBinder](http://mybinder.org/repo/kirstiejane/nora_whitakervendetti_devsci2017) instance! 
+
 ## Questions?
 
 Please [open an issue](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/issues) if you have any questions.
