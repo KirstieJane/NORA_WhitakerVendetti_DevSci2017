@@ -135,7 +135,7 @@ def add_boxes_semantic(ax, color_dict):
 def add_panel_labels_fig1(ax_list):
 
     coords = (0.05, 0.95)
-    color='w'
+    color='k'
     fontsize=14
 
     letters = string.ascii_lowercase
