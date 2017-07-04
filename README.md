@@ -5,6 +5,10 @@ Check out the [jupyter notebook](https://github.com/KirstieJane/NORA_WhitakerVen
 
 You can interact with the code using this [myBinder](http://mybinder.org/repo/kirstiejane/nora_whitakervendetti_devsci2017) instance! 
 
+## Data for meta-analyses
+
+If you'd like to use our statistical maps for meta-analyses please see the [Data for meta-analyses wiki page](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/wiki/Data-for-meta-analyses)
+
 ## Questions?
 
 Please [open an issue](https://github.com/KirstieJane/NORA_WhitakerVendetti_DevSci2017/issues) if you have any questions.
