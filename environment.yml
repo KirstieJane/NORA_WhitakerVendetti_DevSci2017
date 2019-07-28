@@ -6,5 +6,6 @@ dependencies:
   - matplotlib
   - pandas
   - seaborn
+  - pillow
   - pip:
     - palettable
