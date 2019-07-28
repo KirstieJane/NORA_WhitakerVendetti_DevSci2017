@@ -1,11 +1,10 @@
-name: example-environment
+name: nora-devsci2017
 
 dependencies:
   - python
   - numpy
   - matplotlib
   - pandas
-  - sys
-  - warnings
+  - seaborn
   - pip:
     - palettable
